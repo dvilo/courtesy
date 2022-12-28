@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Courtesy Hotels</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,500,700,900" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+        <style>
+            html, body {
+                background-color: #FFF;     
+                color: #405945;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 900;
+                height: 40vh;
+                margin: 1px;
+            }
+
+            .blur {
+                filter: blur(3px);
+                -webkit-filter: blur(3px);
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            .title, .title2 {
+                font-size: 8em;
+                width: 100%;
+                height: 100vh;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .title {
+                visibility:hidden;
+                background: linear-gradient(to right, #2C4031 5%, #FCF9A2 24.3%, #405945 55%, #2C4031 75%);
+
+                /*background: linear-gradient(to right, #FF6B53 20%, #9F6A58 20%, #9F6A58 40%, #565F51 40%, #565F51 60%, #194A2F 60%, #194A2F 80%, #05290E 80%, #05290E 100%);*/
+
+                /*background-image: repeating-linear-gradient(to bottom, transparent, transparent 4px, #405945 4px, #405945 8px),
+                                repeating-linear-gradient(to right, #2C4031, #2C4031 4px, #405945 4px, #405945 8px);*/
+
+                /*background-image: repeating-linear-gradient(to right, #2C4031, #2C4031 4px, #405945 4px, #405945 8px);*/
+
+                /*color: #28487d;*/
+                background-size: 110% 100%;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    /*-webkit-animation: Gradient 5s linear infinite; */
+                    /*transform: translateZ(0);*/
+                z-index: 10;
+                opacity: 1;
+
+            }
+
+/*            @-webkit-keyframes Gradient {
+                0% {
+                    background-position: 0% 50%
+                }
+                50% {
+                    background-position: 10% 50%
+                }
+                100% {
+                    background-position: 0% 50%
+                }
+            }*/
+
+            .title2 {
+                color: white;
+            }
+ 
+            .m-b-md {
+                margin-bottom: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="position-ref full-height">
+            <div class="content">
+                <div class="title m-b-md  flex-center ">
+                    <!-- <div class="bord"> -->
+                    Courtesy Hotels
+                    <!-- </div> -->
+                </div>
+<!--                 <div class="title2 m-b-md blur flex-center ">
+                    Courtesy
+                </div> -->
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $(function () {
+
+                // var col1 = '#121A14'; // darker 233327
+                // var col2 = '#18211A'; // lighter
+
+                // var ranges = [[10,35],[45,55],[65,90]];
+
+                // var lines = 10;
+                // var curPos = 0;
+                // var curLine = 0;
+
+                // var lineVar = 20;  // percent
+
+                // var gradient = 'linear-gradient(to right, ';
+
+                // var pos = [];
+                // var tempPos = [];
+
+
+                // for (var i = 0; i <= lines; i++) {
+                //     var variance = (Math.random() - 0.5) * lineVar * 2;
+                //     for (var j = 0; j <=2; j++) {
+                //         tempPos[j] =  curPos + ((Math.random() * (ranges[j][1]-ranges[j][0] + 1) + ranges[j][0]) + variance) / lines;
+                //     }
+                //     pos.push(tempPos);
+                //     tempPos = [];
+                //     curPos = pos[i][2];
+                // }
+
+                // var correction = 100 / pos[lines][2];
+
+                // for (var i = 0; i <= lines; i++) {
+                //     for (var j = 0; j <=2; j++) {
+                //         pos[i][j] =  pos[i][j] * correction;
+                //     }
+                // }
+
+                // for (var i = 0; i <= lines; i++) {
+                //     gradient += col1 + ' ' + pos[i][0] +'%, ' + col2 + ' ' + pos[i][1] +'%, ' + col1 + ' ' + pos[i][2] + '%, ';
+                // }
+
+                // gradient += col1 + ' ' + pos[lines][0] +'%, ' + col2 + ' ' + pos[lines][1] +'%, ' + col1 + ' ' + pos[lines][2] + '%)';
+
+                // $(".bg").css("background-image", gradient);
+
+                // console.log(gradient);
+
+                $(".title").css("visibility", "visible");
+
+            });
+        </script>
+    </body>
+</html>
